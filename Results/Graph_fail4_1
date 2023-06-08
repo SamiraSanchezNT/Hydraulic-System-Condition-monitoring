@@ -1,0 +1,48 @@
+digraph {
+	"PS1.txt" [label="PS1.txt"]
+	"PS2.txt" [label="PS2.txt"]
+	"PS3.txt" [label="PS3.txt"]
+	"FS1.txt" [label="FS1.txt"]
+	"TS1.txt" [label="TS1.txt"]
+	"TS2.txt" [label="TS2.txt"]
+	"EPS1.txt" [label="EPS1.txt"]
+	"VS1.txt" [label="VS1.txt"]
+	"TS5.txt" [label="TS5.txt"]
+	"CE.txt" [label="CE.txt"]
+	"CP.txt" [label="CP.txt"]
+	"SE.txt" [label="SE.txt"]
+	"PS1.txt" -> "PS2.txt"
+	"PS1.txt" -> "TS2.txt"
+	"PS1.txt" -> "EPS1.txt"
+	"PS1.txt" -> "CE.txt"
+	"PS1.txt" -> "CP.txt"
+	"PS2.txt" -> "TS2.txt"
+	"PS2.txt" -> "VS1.txt"
+	"PS3.txt" -> "PS2.txt"
+	"PS3.txt" -> "CP.txt"
+	"FS1.txt" -> "PS2.txt"
+	"FS1.txt" -> "TS1.txt"
+	"FS1.txt" -> "EPS1.txt"
+	"FS1.txt" -> "CP.txt"
+	"TS1.txt" -> "PS1.txt"
+	"TS1.txt" -> "PS2.txt"
+	"TS1.txt" -> "TS2.txt"
+	"TS1.txt" -> "EPS1.txt"
+	"TS2.txt" -> "CP.txt"
+	"EPS1.txt" -> "PS2.txt"
+	"EPS1.txt" -> "TS2.txt"
+	"EPS1.txt" -> "VS1.txt"
+	"EPS1.txt" -> "CE.txt"
+	"TS5.txt" -> "PS1.txt"
+	"TS5.txt" -> "PS2.txt"
+	"TS5.txt" -> "TS1.txt"
+	"TS5.txt" -> "TS2.txt"
+	"TS5.txt" -> "EPS1.txt"
+	"TS5.txt" -> "VS1.txt"
+	"TS5.txt" -> "CE.txt"
+	"CE.txt" -> "PS3.txt"
+	"CE.txt" -> "TS2.txt"
+	"CE.txt" -> "VS1.txt"
+	"CE.txt" -> "CP.txt"
+	"CP.txt" -> "VS1.txt"
+}
