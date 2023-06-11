@@ -1,0 +1,130 @@
+digraph {
+	CE [label=CE]
+	CP [label=CP]
+	SE [label=SE]
+	TS1 [label=TS1]
+	TS2 [label=TS2]
+	TS3 [label=TS3]
+	TS4 [label=TS4]
+	VS1 [label=VS1]
+	FS1 [label=FS1]
+	FS2 [label=FS2]
+	EPS1 [label=EPS1]
+	PS1 [label=PS1]
+	PS2 [label=PS2]
+	PS3 [label=PS3]
+	PS4 [label=PS4]
+	PS5 [label=PS5]
+	PS6 [label=PS6]
+	CE -> TS1
+	CE -> TS2
+	CE -> TS3
+	CE -> VS1
+	CE -> FS1
+	CE -> FS2
+	CE -> EPS1
+	CE -> PS3
+	CE -> PS4
+	CE -> PS5
+	CP -> CE
+	CP -> TS1
+	CP -> TS2
+	CP -> TS3
+	CP -> VS1
+	CP -> FS1
+	CP -> FS2
+	CP -> PS1
+	CP -> PS3
+	CP -> PS4
+	CP -> PS5
+	CP -> PS6
+	TS1 -> SE
+	TS1 -> TS2
+	TS1 -> TS3
+	TS1 -> VS1
+	TS1 -> FS1
+	TS1 -> EPS1
+	TS1 -> PS1
+	TS1 -> PS3
+	TS1 -> PS4
+	TS2 -> SE
+	TS2 -> VS1
+	TS2 -> EPS1
+	TS3 -> SE
+	TS3 -> TS2
+	TS3 -> VS1
+	TS3 -> FS1
+	TS3 -> EPS1
+	TS3 -> PS1
+	TS3 -> PS3
+	TS4 -> CE
+	TS4 -> TS1
+	TS4 -> TS2
+	TS4 -> TS3
+	TS4 -> VS1
+	TS4 -> FS1
+	TS4 -> FS2
+	TS4 -> EPS1
+	TS4 -> PS1
+	TS4 -> PS3
+	TS4 -> PS4
+	TS4 -> PS5
+	VS1 -> SE
+	FS1 -> SE
+	FS1 -> TS2
+	FS1 -> VS1
+	FS1 -> PS1
+	FS2 -> CE
+	FS2 -> SE
+	FS2 -> TS1
+	FS2 -> TS2
+	FS2 -> TS3
+	FS2 -> VS1
+	FS2 -> EPS1
+	FS2 -> PS1
+	FS2 -> PS3
+	FS2 -> PS4
+	EPS1 -> SE
+	EPS1 -> VS1
+	PS1 -> SE
+	PS1 -> TS2
+	PS1 -> EPS1
+	PS2 -> CE
+	PS2 -> SE
+	PS2 -> TS1
+	PS2 -> TS2
+	PS2 -> TS3
+	PS2 -> TS4
+	PS2 -> VS1
+	PS2 -> FS1
+	PS2 -> FS2
+	PS2 -> EPS1
+	PS2 -> PS1
+	PS2 -> PS3
+	PS3 -> TS2
+	PS3 -> VS1
+	PS3 -> FS1
+	PS3 -> EPS1
+	PS3 -> PS1
+	PS4 -> TS3
+	PS4 -> VS1
+	PS4 -> EPS1
+	PS4 -> PS1
+	PS4 -> PS3
+	PS5 -> TS1
+	PS5 -> TS3
+	PS5 -> FS1
+	PS5 -> EPS1
+	PS5 -> PS3
+	PS5 -> PS4
+	PS6 -> CE
+	PS6 -> CP
+	PS6 -> TS1
+	PS6 -> TS2
+	PS6 -> TS4
+	PS6 -> FS2
+	PS6 -> EPS1
+	PS6 -> PS1
+	PS6 -> PS3
+	PS6 -> PS5
+}
