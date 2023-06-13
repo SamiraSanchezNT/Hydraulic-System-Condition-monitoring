@@ -1,13 +1,14 @@
 load('data_stable_subSample.mat')
 %%
-% close all
-inter = [1, 481, 961, 1,     1
-        480, 960, 1449, 1449,1];
-j = 5;
+close all
+inter =[1,   481, 961,  1,    1071, 1041,1
+        480, 960, 1449, 1449, 1080, 1050,1];
+j = 7;
+s = 1; 
 figure
 t1 = tiledlayout('flow');
 nexttile
-for ii = inter(1,j):10:inter(2,j)
+for ii = inter(1,j):s:inter(2,j)
     plot(EPS1(ii,:))
     hold on
 end
@@ -16,27 +17,37 @@ ylabel('W')
 xlabel('Time, s')
 
 nexttile
-for ii = inter(1,j):10:inter(2,j)
-plot(CE(ii,:))
+for ii = inter(1,j):s:inter(2,j)
+plot(SE(ii,:))
     hold on
 end
-title('CE')
+title('SE')
 ylabel('%')
 xlabel('Time, s')
 % ylim([10 50])
 
-nexttile
-for ii = inter(1,j):10:inter(2,j)
-plot(CP(ii,:))
-    hold on
-end
-title('CP')
-ylabel('kW')
-xlabel('Time, s')
-% ylim([1 2.5])
+% nexttile
+% for ii = inter(1,j):s:inter(2,j)
+% plot(CE(ii,:))
+%     hold on
+% end
+% title('CE')
+% ylabel('%')
+% xlabel('Time, s')
+% % ylim([10 50])
+
+% nexttile
+% for ii = inter(1,j):s:inter(2,j)
+% plot(CP(ii,:))
+%     hold on
+% end
+% title('CP')
+% ylabel('kW')
+% xlabel('Time, s')
+% % ylim([1 2.5])
 
 nexttile
-for ii = inter(1,j):10:inter(2,j)
+for ii = inter(1,j):s:inter(2,j)
     plot(PS1(ii,:))
     hold on
 end
@@ -45,7 +56,7 @@ ylabel('bar')
 xlabel('Time, s')
 
 nexttile
-for ii = inter(1,j):10:inter(2,j)
+for ii = inter(1,j):s:inter(2,j)
 plot(PS2(ii,:))
     hold on
 end
@@ -54,7 +65,7 @@ ylabel('bar')
 xlabel('Time, s')
 
 nexttile
-for ii = inter(1,j):10:inter(2,j)
+for ii = inter(1,j):s:inter(2,j)
 plot(PS3(ii,:))
     hold on
 end
@@ -63,7 +74,7 @@ ylabel('bar')
 xlabel('Time, s')
 
 nexttile
-for ii = inter(1,j):10:inter(2,j)
+for ii = inter(1,j):s:inter(2,j)
 plot(TS1(ii,:))
     hold on
 end
@@ -73,7 +84,7 @@ ylabel('^oC')
 xlabel('Time, s')
 
 nexttile
-for ii = inter(1,j):10:inter(2,j)
+for ii = inter(1,j):s:inter(2,j)
 plot(TS2(ii,:))
     hold on
 end
@@ -83,7 +94,7 @@ ylabel('^oC')
 xlabel('Time, s')
 
 nexttile
-for ii = inter(1,j):10:inter(2,j)
+for ii = inter(1,j):s:inter(2,j)
 plot(FS1(ii,:))
     hold on
 end
