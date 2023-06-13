@@ -1,8 +1,12 @@
-load('data_stable_subSample.mat')
+% load('data_stable_subSample.mat')
+% inter =[1,   481, 961,  1,    1071, 1041,1
+%         480, 960, 1449, 1449, 1080, 1050,1];
+
+load('data_stable_subSample_fixed.mat')
 %%
 close all
-inter =[1,   481, 961,  1,    1071, 1041,1
-        480, 960, 1449, 1449, 1080, 1050,1];
+inter =[1,    1,   248, 728,  1,   117, 168, 200
+        1216, 247, 727, 1216, 116, 167, 199, 247 ];
 j = 7;
 s = 1; 
 figure
@@ -26,25 +30,15 @@ ylabel('%')
 xlabel('Time, s')
 % ylim([10 50])
 
-% nexttile
-% for ii = inter(1,j):s:inter(2,j)
-% plot(CE(ii,:))
-%     hold on
-% end
-% title('CE')
-% ylabel('%')
-% xlabel('Time, s')
-% % ylim([10 50])
-
-% nexttile
-% for ii = inter(1,j):s:inter(2,j)
-% plot(CP(ii,:))
-%     hold on
-% end
-% title('CP')
-% ylabel('kW')
-% xlabel('Time, s')
-% % ylim([1 2.5])
+nexttile
+for ii = inter(1,j):s:inter(2,j)
+plot(VS1(ii,:))
+    hold on
+end
+title('VS1')
+ylabel('mm/s')
+xlabel('Time, s')
+% ylim([10 50])
 
 nexttile
 for ii = inter(1,j):s:inter(2,j)
@@ -101,6 +95,85 @@ end
 title('FS1')
 ylabel('l/min')
 xlabel('Time, s')
+
+%%% COOLER
+figure
+t1 = tiledlayout('flow');
+nexttile
+for ii = inter(1,j):s:inter(2,j)
+plot(TS3(ii,:))
+    hold on
+end
+title('TS3')
+% ylim([30 62])
+ylabel('^oC')
+xlabel('Time, s')
+
+nexttile
+for ii = inter(1,j):s:inter(2,j)
+plot(TS4(ii,:))
+    hold on
+end
+title('TS4')
+% ylim([30 62])
+ylabel('^oC')
+xlabel('Time, s')
+
+nexttile
+for ii = inter(1,j):s:inter(2,j)
+plot(PS4(ii,:))
+    hold on
+end
+title('PS4')
+ylabel('bar')
+xlabel('Time, s')
+
+nexttile
+for ii = inter(1,j):s:inter(2,j)
+plot(PS5(ii,:))
+    hold on
+end
+title('PS5')
+ylabel('bar')
+xlabel('Time, s')
+
+nexttile
+for ii = inter(1,j):s:inter(2,j)
+plot(PS6(ii,:))
+    hold on
+end
+title('PS6')
+ylabel('bar')
+xlabel('Time, s')
+
+nexttile
+for ii = inter(1,j):s:inter(2,j)
+plot(FS2(ii,:))
+    hold on
+end
+title('FS2')
+ylabel('l/min')
+xlabel('Time, s')
+
+nexttile
+for ii = inter(1,j):s:inter(2,j)
+plot(CE(ii,:))
+    hold on
+end
+title('CE')
+ylabel('%')
+xlabel('Time, s')
+% ylim([10 50])
+
+nexttile
+for ii = inter(1,j):s:inter(2,j)
+plot(CP(ii,:))
+    hold on
+end
+title('CP')
+ylabel('kW')
+xlabel('Time, s')
+% ylim([1 2.5])
 %%
 i = 1;
 figure
