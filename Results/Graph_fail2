@@ -16,23 +16,19 @@ digraph {
 	PS4 [label=PS4]
 	PS5 [label=PS5]
 	PS6 [label=PS6]
-	CE -> VS1
-	CE -> PS1
+	CE -> CP
+	CE -> FS1
 	CE -> PS2
-	CE -> PS3
 	CE -> PS4
-	CP -> CE
-	CP -> VS1
-	CP -> PS1
+	CP -> PS2
+	CP -> PS3
 	CP -> PS4
-	TS1 -> CE
-	TS1 -> TS3
-	TS1 -> TS4
+	TS1 -> VS1
 	TS1 -> FS1
-	TS1 -> PS1
 	TS1 -> PS2
 	TS1 -> PS3
 	TS1 -> PS5
+	TS1 -> PS6
 	TS2 -> CE
 	TS2 -> CP
 	TS2 -> TS1
@@ -41,40 +37,48 @@ digraph {
 	TS2 -> VS1
 	TS2 -> FS1
 	TS2 -> FS2
-	TS2 -> PS1
 	TS2 -> PS2
 	TS2 -> PS3
 	TS2 -> PS4
+	TS2 -> PS5
 	TS2 -> PS6
 	TS3 -> CE
 	TS3 -> CP
+	TS3 -> TS1
+	TS3 -> TS4
 	TS3 -> VS1
 	TS3 -> FS1
 	TS3 -> FS2
 	TS3 -> PS2
-	TS3 -> PS4
+	TS3 -> PS3
 	TS3 -> PS5
 	TS4 -> CE
 	TS4 -> CP
-	TS4 -> TS3
-	TS4 -> FS1
-	TS4 -> PS1
+	TS4 -> TS1
+	TS4 -> FS2
+	TS4 -> PS2
 	TS4 -> PS3
-	TS4 -> PS4
 	TS4 -> PS5
-	TS4 -> PS6
+	VS1 -> CE
+	VS1 -> FS1
+	VS1 -> PS1
+	VS1 -> PS2
+	VS1 -> PS3
+	VS1 -> PS4
+	VS1 -> PS6
 	FS1 -> SE
-	FS1 -> VS1
 	FS1 -> PS2
 	FS1 -> PS3
 	FS2 -> CE
 	FS2 -> CP
 	FS2 -> SE
-	FS2 -> PS1
+	FS2 -> TS4
+	FS2 -> VS1
 	FS2 -> PS4
 	FS2 -> PS5
 	FS2 -> PS6
 	EPS1 -> CE
+	EPS1 -> CP
 	EPS1 -> SE
 	EPS1 -> TS1
 	EPS1 -> TS3
@@ -84,15 +88,16 @@ digraph {
 	EPS1 -> PS2
 	EPS1 -> PS3
 	EPS1 -> PS5
+	PS1 -> CE
+	PS1 -> CP
 	PS1 -> SE
 	PS1 -> FS1
 	PS1 -> PS2
 	PS1 -> PS3
+	PS1 -> PS4
 	PS2 -> SE
+	PS2 -> PS3
 	PS3 -> SE
-	PS3 -> VS1
-	PS3 -> PS2
-	PS4 -> VS1
 	PS4 -> FS1
 	PS4 -> PS2
 	PS4 -> PS3
@@ -102,8 +107,6 @@ digraph {
 	PS5 -> PS1
 	PS5 -> PS4
 	PS5 -> PS6
-	PS6 -> CP
-	PS6 -> PS1
 	PS6 -> PS2
 	PS6 -> PS3
 	PS6 -> PS4
