@@ -1,12 +1,13 @@
-% load('data_stable_subSample.mat')
-% inter =[1,   481, 961,  1,    1071, 1041,1
-%         480, 960, 1449, 1449, 1080, 1050,1];
+load('data_stable_subSample.mat')
+inter =[1,   481, 961,  1,    1071, 1041,481
+        480, 960, 1449, 1449, 1080, 1050,481];
 
-load('data_stable_subSample_fixed.mat')
+% load('data_stable_subSample_fixed.mat')
+% inter =[1,    1,   248, 728,  1,   117, 168, 200
+%         1216, 247, 727, 1216, 116, 167, 199, 247 ];
 %%
 close all
-inter =[1,    1,   248, 728,  1,   117, 168, 200
-        1216, 247, 727, 1216, 116, 167, 199, 247 ];
+
 j = 7;
 s = 1; 
 figure
