@@ -1,0 +1,26 @@
+digraph {
+	"PS5.txt" [label="PS5.txt"]
+	"PS6.txt" [label="PS6.txt"]
+	"FS2.txt" [label="FS2.txt"]
+	"TS3.txt" [label="TS3.txt"]
+	"TS4.txt" [label="TS4.txt"]
+	"CE.txt" [label="CE.txt"]
+	"CP.txt" [label="CP.txt"]
+	"PS5.txt" -> "PS6.txt"
+	"PS5.txt" -> "TS3.txt"
+	"PS5.txt" -> "TS4.txt"
+	"PS6.txt" -> "TS4.txt"
+	"FS2.txt" -> "PS5.txt"
+	"FS2.txt" -> "TS3.txt"
+	"FS2.txt" -> "TS4.txt"
+	"FS2.txt" -> "CE.txt"
+	"TS3.txt" -> "PS6.txt"
+	"TS3.txt" -> "TS4.txt"
+	"CE.txt" -> "PS5.txt"
+	"CE.txt" -> "FS2.txt"
+	"CE.txt" -> "TS3.txt"
+	"CE.txt" -> "TS4.txt"
+	"CE.txt" -> "CP.txt"
+	"CP.txt" -> "PS5.txt"
+	"CP.txt" -> "CE.txt"
+}

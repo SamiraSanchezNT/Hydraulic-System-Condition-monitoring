@@ -1,0 +1,37 @@
+digraph {
+	"PS1.txt" [label="PS1.txt"]
+	"PS2.txt" [label="PS2.txt"]
+	"PS3.txt" [label="PS3.txt"]
+	"FS1.txt" [label="FS1.txt"]
+	"TS1.txt" [label="TS1.txt"]
+	"TS2.txt" [label="TS2.txt"]
+	"EPS1.txt" [label="EPS1.txt"]
+	"VS1.txt" [label="VS1.txt"]
+	"PS2.txt" -> "PS1.txt"
+	"PS2.txt" -> "PS3.txt"
+	"PS2.txt" -> "EPS1.txt"
+	"PS2.txt" -> "VS1.txt"
+	"PS3.txt" -> "PS1.txt"
+	"FS1.txt" -> "PS1.txt"
+	"FS1.txt" -> "TS1.txt"
+	"FS1.txt" -> "TS2.txt"
+	"FS1.txt" -> "EPS1.txt"
+	"FS1.txt" -> "VS1.txt"
+	"TS1.txt" -> "PS3.txt"
+	"TS1.txt" -> "FS1.txt"
+	"TS1.txt" -> "TS2.txt"
+	"TS1.txt" -> "EPS1.txt"
+	"TS1.txt" -> "VS1.txt"
+	"TS2.txt" -> "PS1.txt"
+	"TS2.txt" -> "PS3.txt"
+	"TS2.txt" -> "FS1.txt"
+	"TS2.txt" -> "TS1.txt"
+	"TS2.txt" -> "EPS1.txt"
+	"TS2.txt" -> "VS1.txt"
+	"EPS1.txt" -> "PS1.txt"
+	"EPS1.txt" -> "PS3.txt"
+	"EPS1.txt" -> "VS1.txt"
+	"VS1.txt" -> "PS1.txt"
+	"VS1.txt" -> "PS3.txt"
+	"VS1.txt" -> "EPS1.txt"
+}
