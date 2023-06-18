@@ -1,0 +1,10 @@
+digraph {
+	PS5 [label=PS5]
+	PS6 [label=PS6]
+	FS2 [label=FS2]
+	TS3 [label=TS3]
+	TS4 [label=TS4]
+	CE [label=CE]
+	CP [label=CP]
+	TS3 -> FS2
+}
