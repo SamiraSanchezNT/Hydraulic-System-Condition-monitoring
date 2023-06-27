@@ -1,12 +1,4 @@
 digraph {
-	PS1 [label=PS1]
-	PS2 [label=PS2]
-	PS3 [label=PS3]
-	FS1 [label=FS1]
-	TS1 [label=TS1]
-	TS2 [label=TS2]
-	EPS1 [label=EPS1]
-	VS1 [label=VS1]
 	PS1 -> PS2
 	PS1 -> FS1
 	PS1 -> TS1
